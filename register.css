@@ -1,0 +1,336 @@
+        body {
+            background: #fff;
+            color: #2f3138;
+            font-family: "Open Sans", sans-serif;
+        }
+        
+        a {
+            color: #2b84ea;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        
+        a:hover,
+        a:active,
+        a:focus {
+            color: #f8234a;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        p {
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            margin: 0 0 20px 0;
+            padding: 0;
+            color: #0e1b4d;
+        }
+        
+        .main-page {
+            margin-top: 70px;
+        }
+        
+        /* Prelaoder */
+        @media (min-width:1024px) {
+        
+            #loading {
+            
+            background-size:auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 9999999;
+        }
+            
+        }
+        
+        @media (max-width:1024px) {
+        
+            #loading {
+            background: url('./9-16.gif');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 9999999;
+        }
+            
+        }
+        
+        /*--------------------------------------------------------------
+        # Header
+        --------------------------------------------------------------*/
+        #header {
+            height: 90px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            transition: all 0.5s;
+            z-index: 997;
+        }
+        
+        #header.header-scrolled,
+        #header.header-inner {
+            background: rgba(6, 12, 34, 0.98);
+            height: 70px;
+        }
+        
+        #header #logo h1 {
+            font-size: 36px;
+            margin: 0;
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+        #header #logo h1 span {
+            color: #2b84ea;
+        }
+        
+        #header #logo h1 a,
+        #header #logo h1 a:hover {
+            color: #fff;
+        }
+        
+        #header #logo img {
+            padding-top:10px;
+            margin: 0;
+            height: 200px;
+        }
+        
+        @media (max-width: 992px) {
+            #header #logo img {
+            max-height: 200px;
+            padding-top:10px;
+            margin: 0;
+            }
+        }
+        
+        
+        
+        
+        /*--------------------------------------------------------------
+        # Navigation Menu
+        --------------------------------------------------------------*/
+        /**
+        * Desktop Navigation 
+        */
+        .navbar {
+            padding: 0;
+        }
+        
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .navbar li {
+            position: relative;
+        }
+        
+        .navbar>ul>li {
+            white-space: nowrap;
+            padding: 10px 0 10px 12px;
+        }
+        
+        .navbar a,
+        .navbar a:focus {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgba(202, 206, 221, 0.8);
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            white-space: nowrap;
+            transition: 0.3s;
+            position: relative;
+            padding: 6px 4px;
+        }
+        
+        .navbar a i,
+        .navbar a:focus i {
+            font-size: 12px;
+            line-height: 0;
+            margin-left: 5px;
+        }
+        
+        .navbar>ul>li>a:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -6px;
+            left: 0;
+            background-color: #2b84ea;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover>a {
+            color: #fff;
+        }
+
+        .navbar a:hover{
+            color:white;
+            
+        }
+
+        
+        
+        /**
+        * Mobile Navigation 
+        */
+    
+        /*--------------------------------------------------------------
+        # Hero Section
+        --------------------------------------------------------------*/
+        #hero {
+            width: 100%;
+            height: 100vh;
+            
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        
+        video {
+            object-fit: contain;
+            width: 100%;
+            min-height: 100%;
+        }
+        @media (max-width: 1024px) {
+            video {
+            display: none;
+            }
+        }
+        
+        
+        .video-container {
+            width: 100%; /* Adjust as needed */
+            height: auto; /* Adjust as needed */
+            text-align: center; /* Center the video */
+        }
+        
+        /* Hide the video on desktop screens */
+        .desktop-hidden {
+            display: none;
+        }
+        
+        /* Show the video on mobile screens */
+        @media (max-width: 1023px) {
+            .desktop-hidden {
+            display: block;
+            }
+            .video-container {
+        
+        }
+            
+        }
+
+        @media (min-width: 1024px) {
+            #hero {
+              background-attachment:fixed;
+            }
+          }
+          
+          #hero:before {
+            content: "";
+            background: rgba(6, 12, 34, 0.8);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+          }
+
+          /* login form */
+
+          @import "bourbon";
+
+
+
+
+
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  margin: 10px,50px,20px;
+  border-radius: 10px;
+  align-content:space-around ;
+  position:fixed;
+  top: 20%;
+  left: 30%;
+  width: 600px;
+  height:500px;
+  bottom: 30%;
+}  
+.login h1{
+    text-align: center;
+}  
+
+.login h6{
+    text-align: center;
+    padding: 30px 150px 10px 150px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login p{
+  align-self: center;
+  padding: 30px 125px 10px 150px;
+  top: 20%;
+  left: 50%;
+  font-size: 20px;
+}
+
+.login p1{
+    align-self: center;
+    padding: 20px 125px 10px 150px;
+    top: 20%;
+    left: 50%;
+    font-size: 20px;
+  }
+
+  .login p2{
+    padding: 20px 0px 10px 0px;
+    align-self: center;
+    font-size: 15px;
+    color:rgb(230, 30, 30);
+    font-weight: bold;
+  }
+
+  .sci li{
+    align-items:flex-start;
+  }
+
+  .sci a img{
+    width: 50px;
+    height:50px;
+  }
